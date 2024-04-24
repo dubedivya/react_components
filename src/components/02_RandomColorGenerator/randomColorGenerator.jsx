@@ -46,7 +46,7 @@ const RandomColorGenerator = () => {
     let g = randomColor(256);
     let b = randomColor(256);
 
-    console.log(`rgb${r},${g},${b}`);
+    console.log(`${r},${g},${b}`);
     setColor(`rgb(${r},${g},${b})`);
   };
   return (
@@ -58,6 +58,13 @@ const RandomColorGenerator = () => {
         margin: "auto",
       }}
     >
+      <div className="colorGeneratorBtn" style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "20px",
+}
+      }>
       <button onClick={() => setColorType("hex")}>Create HEX Color</button>
       <button onClick={() => setColorType("rgb")}>Create RGB Color</button>
       <button
@@ -68,7 +75,8 @@ const RandomColorGenerator = () => {
         }
       >
         Generate Random Color
-      </button>
+        </button>
+        </div>
       <div
         style={{
           display: "flex",
@@ -80,8 +88,9 @@ const RandomColorGenerator = () => {
           flexDirection: "column",
         }}
       >
-        <h3>{colorType} Color</h3>
+        <h3>{colorType.toUpperCase()} color </h3>
         <h1>{color}</h1>
+        
       </div>
     </div>
   );
