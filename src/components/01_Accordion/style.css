@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.multiSelectBtnEnabled {
+  background-color: #c3942a;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 15px 20px;
+  border: 1px solid transparent;
+}
+
+.multiSelectBtnDisabled {
+  background-color: #614101;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 15px 20px;
+  border: 1px solid transparent;
+}
+
+.accordion {
+  width: 800px;
+}
+
+.dataItem {
+  background-color: #614101;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.title {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordBody {
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 10px;
+}
