@@ -30,7 +30,7 @@ function StarRating({ numberOfStars = 5 }) {
             onClick={() => handleClick(index)}
             onMouseMove={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave()}
-            size={40}
+            size={50}
           />
         );
       })}

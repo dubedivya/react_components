@@ -52,31 +52,32 @@ const RandomColorGenerator = () => {
   return (
     <div
       style={{
-        height: "100vh",
         width: "100vw",
         backgroundColor: color,
         margin: "auto",
       }}
     >
-      <div className="colorGeneratorBtn" style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "20px",
-}
-      }>
-      <button onClick={() => setColorType("hex")}>Create HEX Color</button>
-      <button onClick={() => setColorType("rgb")}>Create RGB Color</button>
-      <button
-        onClick={
-          colorType === "hex"
-            ? handleCreateRandomHexColor
-            : handleCreateRandomRGBColor
-        }
+      <div
+        className="colorGeneratorBtn"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "20px",
+        }}
       >
-        Generate Random Color
+        <button onClick={() => setColorType("hex")}>Create HEX Color</button>
+        <button onClick={() => setColorType("rgb")}>Create RGB Color</button>
+        <button
+          onClick={
+            colorType === "hex"
+              ? handleCreateRandomHexColor
+              : handleCreateRandomRGBColor
+          }
+        >
+          Generate Random Color
         </button>
-        </div>
+      </div>
       <div
         style={{
           display: "flex",
@@ -90,7 +91,6 @@ const RandomColorGenerator = () => {
       >
         <h3>{colorType.toUpperCase()} color </h3>
         <h1>{color}</h1>
-        
       </div>
     </div>
   );

@@ -1,7 +1,15 @@
-.active{
+.star_rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.active {
     color: #c3942a;
 }
 
-.inactive{
+.inactive {
     color: black;
 }
