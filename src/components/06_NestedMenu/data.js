@@ -55,6 +55,26 @@ export const menus = [
       },
     ],
   },
+  {
+    label: "About",
+    to: "about",
+    children: [
+      {
+        label: "Team",
+        to: "team",
+        children: [
+          {
+            label: "Technical Staff",
+            to: "technical-staff",
+          },
+          {
+            label: "Admin",
+            to: "admin",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export default menus;

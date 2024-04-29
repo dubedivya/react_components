@@ -1,5 +1,6 @@
 import "./App.css";
-import LoadMoreData from "./components/05_LoadMoreData/index.jsx";
+import menus from "./components/06_NestedMenu/data.js";
+import NestedMenu from "./components/06_NestedMenu/index.jsx";
 // import StarRating from "./components/03_StarRating/index.jsx";
 //import ImageSlider from "./components/04_ImageSlider/index.jsx";
 // import Accordion from "./components/01_Accordion/Accordion.jsx";
@@ -18,7 +19,9 @@ function App() {
       {/* Image Slider component*/}
       {/*<ImageSlider url="https://picsum.photos/v2/list" limit="10" page="1" />*/}
       {/*Load More Component*/}
-      <LoadMoreData />
+      {/*<LoadMoreData />*/}
+      {/*Nested Menu UI/ recursive menu UI / Tree view menu*/}
+      <NestedMenu menu={menus} />
     </>
   );
 }
