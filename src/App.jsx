@@ -1,6 +1,5 @@
 import "./App.css";
-import menus from "./components/06_NestedMenu/data.js";
-import NestedMenu from "./components/06_NestedMenu/index.jsx";
+import QRCodeGenerator from "./components/07_QRCodeGenerator/index.jsx";
 // import StarRating from "./components/03_StarRating/index.jsx";
 //import ImageSlider from "./components/04_ImageSlider/index.jsx";
 // import Accordion from "./components/01_Accordion/Accordion.jsx";
@@ -21,7 +20,10 @@ function App() {
       {/*Load More Component*/}
       {/*<LoadMoreData />*/}
       {/*Nested Menu UI/ recursive menu UI / Tree view menu*/}
-      <NestedMenu menu={menus} />
+      {/*<NestedMenu menu={menus} />*/}
+
+      {/*QR CODE Generator*/}
+      <QRCodeGenerator />
     </>
   );
 }

@@ -1,0 +1,14 @@
+.qr-generator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-container {
+    margin: 30px 0;
+}
+
+.input-box {
+    width: 60%;
+}
