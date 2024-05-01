@@ -1,0 +1,39 @@
+/*.container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*}*/
+.heading-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    background-color: cadetblue;
+    margin-bottom: 30px;
+
+}
+
+.scroll-progress-container {
+    height: 10px;
+    width: 100%;
+    background-color: #aaf900;
+}
+
+.progress-indicator {
+    height: 10px;
+    width: 0%;
+    background-color: #8b02b5;
+}
+
+.products-list {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.loading-msg {
+    text-align: center;
+
+}

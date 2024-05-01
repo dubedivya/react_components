@@ -1,5 +1,5 @@
 import "./App.css";
-import ThemeSwitcher from "./components/08_ThemeSwitcher/index.jsx";
+import ScrollIndicator from "./components/09_ScrollIndicator/index.jsx";
 // import StarRating from "./components/03_StarRating/index.jsx";
 //import ImageSlider from "./components/04_ImageSlider/index.jsx";
 // import Accordion from "./components/01_Accordion/Accordion.jsx";
@@ -31,7 +31,10 @@ function App() {
       {/*<QRCodeGenerator />*/}
 
       {/*Theme Switcher*/}
-      <ThemeSwitcher />
+      {/*<ThemeSwitcher />*/}
+
+      {/*Scroll Indicator*/}
+      <ScrollIndicator url="https://dummyjson.com/products?limit=100" />
     </>
   );
 }
