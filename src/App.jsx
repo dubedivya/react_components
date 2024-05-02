@@ -1,7 +1,7 @@
 import "./App.css";
-import ScrollIndicator from "./components/09_ScrollIndicator/index.jsx";
-// import StarRating from "./components/03_StarRating/index.jsx";
-//import ImageSlider from "./components/04_ImageSlider/index.jsx";
+import TabTest from "./components/10_CustomTabs/tabtest.jsx";
+// import StarRating from "./components/03_StarRating/tabs.jsx";
+//import ImageSlider from "./components/04_ImageSlider/tabs.jsx";
 // import Accordion from "./components/01_Accordion/Accordion.jsx";
 // import RandomColorGenerator from "./components/02_RandomColorGenerator/randomColorGenerator.jsx";
 // import data from "./components/01_Accordion/accordData.js";
@@ -34,7 +34,10 @@ function App() {
       {/*<ThemeSwitcher />*/}
 
       {/*Scroll Indicator*/}
-      <ScrollIndicator url="https://dummyjson.com/products?limit=100" />
+      {/*<ScrollIndicator url="https://dummyjson.com/products?limit=100" />*/}
+
+      {/*Tabs*/}
+      <TabTest />
     </>
   );
 }
