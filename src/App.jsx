@@ -1,5 +1,5 @@
 import "./App.css";
-import TabTest from "./components/10_CustomTabs/tabtest.jsx";
+import ModalTest from "./components/11_ModalPopup/modal-test.jsx";
 // import StarRating from "./components/03_StarRating/tabs.jsx";
 //import ImageSlider from "./components/04_ImageSlider/tabs.jsx";
 // import Accordion from "./components/01_Accordion/Accordion.jsx";
@@ -37,7 +37,10 @@ function App() {
       {/*<ScrollIndicator url="https://dummyjson.com/products?limit=100" />*/}
 
       {/*Tabs*/}
-      <TabTest />
+      {/*<TabTest />*/}
+
+      {/*Modal PopUp*/}
+      <ModalTest />
     </>
   );
 }
