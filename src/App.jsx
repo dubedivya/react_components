@@ -1,5 +1,5 @@
 import "./App.css";
-import ModalTest from "./components/11_ModalPopup/modal-test.jsx";
+import GithubProfileFinder from "./components/12_GithubProfileFinder/githubProfile.jsx";
 // import StarRating from "./components/03_StarRating/tabs.jsx";
 //import ImageSlider from "./components/04_ImageSlider/tabs.jsx";
 // import Accordion from "./components/01_Accordion/Accordion.jsx";
@@ -40,7 +40,10 @@ function App() {
       {/*<TabTest />*/}
 
       {/*Modal PopUp*/}
-      <ModalTest />
+      {/*<ModalTest />*/}
+
+      {/*Github Profile finder  */}
+      <GithubProfileFinder />
     </>
   );
 }
