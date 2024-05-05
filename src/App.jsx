@@ -1,5 +1,5 @@
 import "./App.css";
-import GithubProfileFinder from "./components/12_GithubProfileFinder/githubProfile.jsx";
+import SearchAutoComplete from "./components/13_SearchAutoComplete/index.jsx";
 // import StarRating from "./components/03_StarRating/tabs.jsx";
 //import ImageSlider from "./components/04_ImageSlider/tabs.jsx";
 // import Accordion from "./components/01_Accordion/Accordion.jsx";
@@ -43,7 +43,10 @@ function App() {
       {/*<ModalTest />*/}
 
       {/*Github Profile finder  */}
-      <GithubProfileFinder />
+      {/*<GithubProfileFinder />*/}
+
+      {/*Search Auto Complete*/}
+      <SearchAutoComplete />
     </>
   );
 }
