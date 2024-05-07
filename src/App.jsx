@@ -1,5 +1,5 @@
 import "./App.css";
-import SearchAutoComplete from "./components/13_SearchAutoComplete/index.jsx";
+import TicTacToe from "./components/14_TicTacToe/index.jsx";
 // import StarRating from "./components/03_StarRating/tabs.jsx";
 //import ImageSlider from "./components/04_ImageSlider/tabs.jsx";
 // import Accordion from "./components/01_Accordion/Accordion.jsx";
@@ -46,7 +46,10 @@ function App() {
       {/*<GithubProfileFinder />*/}
 
       {/*Search Auto Complete*/}
-      <SearchAutoComplete />
+      {/*<SearchAutoComplete />*/}
+
+      {/*Tic tac toe game*/}
+      <TicTacToe />
     </>
   );
 }
