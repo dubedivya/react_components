@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
+import useOutsideClick from "../16_CustomHooks/useOutsideClick/index.jsx";
 
 const Modal = ({ id, header, body, footer, onClose }) => {
+  const ref = useRef();
+  useOutsideClick(ref, onClose);
   return (
     <div className="modal" id={id || "Modal"}>
-      <div className="modal-content-box">
+      <div ref={ref} className="modal-content-box">
         <div className="modal-header">
           <h2>{header ? header : "Modal Header"}</h2>
           <span className="close-modal-icon" onClick={onClose}>

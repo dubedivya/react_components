@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Suggestions from "./suggestions.jsx";
 import "./style.css";
+import useOutsideClick from "../16_CustomHooks/useOutsideClick/index.jsx";
 
 const SearchAutoComplete = () => {
   const [loading, setLoading] = useState(false);
@@ -9,6 +10,8 @@ const SearchAutoComplete = () => {
   const [searchParams, setSearchParams] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
+  const ref = useRef();
+  useOutsideClick(ref, () => setShowDropdown(false));
 
   const handleChange = (e) => {
     let query = e.target.value.toLowerCase();
@@ -67,7 +70,11 @@ const SearchAutoComplete = () => {
       />
       {loading && <h2>Loading data....Please wait!</h2>}
       {showDropdown && (
-        <Suggestions users={filteredUsers} handleClick={handleClick} />
+        <Suggestions
+          ref={ref}
+          users={filteredUsers}
+          handleClick={handleClick}
+        />
       )}
     </div>
   );
