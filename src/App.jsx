@@ -1,7 +1,6 @@
 import "./App.css";
-import FeatureFlagsGlobalState from "./components/15_FeatureFlag/context/index.jsx";
-import FeatureFlags from "./components/15_FeatureFlag/main.jsx";
 import React from "react";
+import UseFetchHookTest from "./components/16_CustomHooks/useFetch/test.jsx";
 // import TicTacToe from "./components/14_TicTacToe/index.jsx";
 // import StarRating from "./components/03_StarRating/index.jsx";
 // import ImageSlider from "./components/04_ImageSlider/index.jsx";
@@ -63,9 +62,12 @@ function App() {
       {/*<TicTacToe />*/}
 
       {/*Feature Flags Component*/}
-      <FeatureFlagsGlobalState>
-        <FeatureFlags />
-      </FeatureFlagsGlobalState>
+      {/*<FeatureFlagsGlobalState>*/}
+      {/*  <FeatureFlags />*/}
+      {/*</FeatureFlagsGlobalState>*/}
+
+      {/*Custom Hooks*/}
+      <UseFetchHookTest />
     </>
   );
 }
