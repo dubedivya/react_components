@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import UseOnClickOutsideTest from "./components/16_CustomHooks/useOutsideClick/test.jsx";
 import UseFetchHookTest from "./components/16_CustomHooks/useFetch/test.jsx";
+import UseWindowResizeTest from "./components/16_CustomHooks/useWindowResize/test.jsx";
 // import TicTacToe from "./components/14_TicTacToe/index.jsx";
 // import StarRating from "./components/03_StarRating/index.jsx";
 // import ImageSlider from "./components/04_ImageSlider/index.jsx";
@@ -70,6 +71,7 @@ function App() {
       {/*Custom Hooks*/}
       <UseFetchHookTest />
       <UseOnClickOutsideTest />
+      <UseWindowResizeTest />
     </>
   );
 }
