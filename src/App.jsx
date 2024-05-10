@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import ScrollToTopAndBottom from "./components/17_ScrollToTopAndBottom/index.jsx";
+import ScrollToSection from "./components/18_ScrollToSection/index.jsx";
 // import TicTacToe from "./components/14_TicTacToe/index.jsx";
 // import StarRating from "./components/03_StarRating/index.jsx";
 // import ImageSlider from "./components/04_ImageSlider/index.jsx";
@@ -72,7 +72,10 @@ function App() {
       {/*<UseWindowResizeTest />*/}
 
       {/*Scroll to top and bottom*/}
-      <ScrollToTopAndBottom />
+      {/*<ScrollToTopAndBottom />*/}
+
+      {/*Scroll to Particular section*/}
+      <ScrollToSection />
     </>
   );
 }
